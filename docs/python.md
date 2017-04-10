@@ -35,3 +35,15 @@ run a simple query to find the state that contains the location with latitude *4
     Region(type="us_state", key="UT", name="Utah")
     >>> result.name
     "Utah"
+
+More complex queries are also possible by combining several objects and function calls. The following
+example shows how to compute driving distance from the centroid (middle) of Oregon to the centroid of
+Washington State:
+
+    >>> from cairn_gis import Connection, Region
+    >>> conn = Connection(API_KEY)
+    >>> washington_center = Region("us_state", "WA").centroid()
+    >>> oregon_center = Region("us_state", "OR").centroid()
+    >>> query = oregon_center.driving_distance(washington_center)
+    >>> conn.run(query)
+    Measure(value=301.90, unit="mi")
