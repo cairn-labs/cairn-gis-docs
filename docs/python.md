@@ -27,23 +27,27 @@ latitude and longitude) or `Region` (a region of the earth, such as a country, s
 objects are used to construct queries that can then be evaluated by the Cairn GIS server. Here's how to
 run a simple query to find the state that contains the location with latitude *40.76* and longitude *-111.89*:
 
-    >>> from cairn_gis import Connection, Location
-    >>> conn = Connection(API_KEY)
-    >>> query = Location(40.76, -111.89).region('us_state')
-    >>> result = conn.run(query)
-    >>> result
-    Region(type="us_state", key="UT", name="Utah")
-    >>> result.name
-    "Utah"
+```python
+>>> from cairn_gis import Connection, Location
+>>> conn = Connection(API_KEY)
+>>> query = Location(40.76, -111.89).region('us_state')
+>>> result = conn.run(query)
+>>> result
+Region(type="us_state", key="UT", name="Utah")
+>>> result.name
+"Utah"
+```
 
 More complex queries are also possible by combining several objects and function calls. The following
 example shows how to compute driving distance from the centroid (middle) of Oregon to the centroid of
 Washington State:
 
-    >>> from cairn_gis import Connection, Region
-    >>> conn = Connection(API_KEY)
-    >>> washington_center = Region("us_state", "WA").centroid()
-    >>> oregon_center = Region("us_state", "OR").centroid()
-    >>> query = oregon_center.driving_distance(washington_center)
-    >>> conn.run(query)
-    Measure(value=301.90, unit="mi")
+```python
+>>> from cairn_gis import Connection, Region
+>>> conn = Connection(API_KEY)
+>>> washington_center = Region("us_state", "WA").centroid()
+>>> oregon_center = Region("us_state", "OR").centroid()
+>>> query = oregon_center.driving_distance(washington_center)
+>>> conn.run(query)
+Measure(value=301.90, unit="mi")
+```
