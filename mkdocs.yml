@@ -1,0 +1,5 @@
+site_name: Cairn GIS Documentation
+pages:
+  - Home: index.md
+  - Python Client: python.md
+theme: readthedocs
