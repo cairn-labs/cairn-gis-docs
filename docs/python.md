@@ -6,11 +6,6 @@ If you are running a fairly modern version of Python, you should be able to inst
 
     pip install cairn-gis
 
-Alternatively, if you are an Anaconda user, you can install with
-
-    conda install cairn-gis
-
-
 ## Authentication
 
 To use Cairn GIS, you will first need an **API key** to identify your client to the central geographic server.
@@ -18,7 +13,6 @@ You can create one of these for free at [www.cairngis.com](www.cairngis.com). On
 store it somewhere safe, as it is your password to Cairn GIS. It will be in a format that looks like
 `CGIS-80c6d145-22ec-45da-a0fc-9f7e8666f062`. The rest of this page assumes you have an API key, and refers
 to it as `API_KEY`.
-
 
 ## Quick Start
 

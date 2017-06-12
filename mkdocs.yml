@@ -2,4 +2,5 @@ site_name: Cairn GIS Documentation
 pages:
   - Home: index.md
   - Python Client: python.md
+  - Excel Client: excel.md
 theme: readthedocs
