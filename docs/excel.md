@@ -26,4 +26,37 @@ will turn green and your remaining monthly queries will be displayed.
 
 ## Quick Start
 
-Hello
+Cairn Geographics provides a number of new functions that you can use in your Excel formulas in the
+same way as you use built-in functions like `SUM`. These functions are listed below, along with examples:
+
+### Geocoding
+| Function | Arguments | Description                                                                                       | Example                                       |
+|----------|-----------|---------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| Geocode  | address   | Given a US postal address, returns the nearest latitude and longitude as a comma separated string | `=Geocode("947 S 700 E, Salt Lake City, UT")` |
+
+### Driving Distance/Time
+| Function         | Arguments                                | Description                                                                         | Example                                         |
+|------------------|------------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------|
+| DrivingDistance  | start_lat, start_lon, end_lat, end_lon   | Compute the length of the shortest driving route (in meters) between two US points. | `=DrivingDistance(34.03,-118.49,34.06,-118.36)` |
+| DrivingTime      | start_lat, start_lon, end_lat, end_lon   | Estimate the driving time of the shortest route (in seconds) between two US points. | `=DrivingTime(34.03,-118.49,34.06,-118.36)`     |
+
+### Geographic Boundaries
+| Function         | Arguments  | Description                                                                                          | Example                            |
+|------------------|------------|------------------------------------------------------------------------------------------------------|------------------------------------|
+| EnclosingState   | lat, lon   | Get the postal code (e.g. CA, MA) of the state containing the input point.                           | `=EnclosingState(34.03,-118.49)`   |
+| EnclosingZipCode | lat, lon   | Get the five-digit zip code (e.g. 90034) of the zip code tabulation area containing the input point. | `=EnclosingZipCode(34.03,-118.49)` |
+| EnclosingMetro   | lat, lon   | Get the name (e.g. "Salt Lake City, UT") of the metro area (CBSA) containing the input point.        | `=EnclosingMetro(34.03,-118.49)`   |
+| EnclosingCounty  | lat, lon   | Get the name (e.g. "Los Angeles County") of the US county containing the input point.                | `=EnclosingCounty(34.03,-118.49)`  |
+
+### Demographics
+
+The functions below all include the argument `demographics_key`, which tells Cairn Geographics
+what information to extract for the relevant geographic area. All information comes from the
+most recent American Community Survey (ACS). Demographics keys can either be named data (e.g.
+"population" or "median_household_income") or expressions made up of ACS columns (e.g.
+"B05001002/B05001001").
+
+| Function            | Arguments                     | Description                                                       | Example                                                |
+|---------------------|-------------------------------|-------------------------------------------------------------------|--------------------------------------------------------|
+| ZipCodeDemographics | zip_code, demographics_key    | Look up demographic information for a given five-digit zip code.  | `=ZipCodeDemographics("02138", "population")`          |
+| StateDemographics   | state_code, demographics_key  | Look up demographic information for a given US state.             | `=StateDemographics("GA", "B01001A003 + B01001B003")`  |
