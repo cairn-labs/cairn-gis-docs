@@ -5,7 +5,7 @@
 If you are running a fairly modern version of Python 2 or 3, you should be able to install the Cairn
 Geographics client with
 
-```bash
+```
 pip install cairn-geographics
 ```
 
