@@ -15,7 +15,8 @@ If you'd like to install it permanently, then go to **File** -> **Options**, and
 ## Authentication
 
 To use Cairn Geographics, you will first need an **API key** to identify your client to the central
-geographic server. Your representative will provide you with an API key. Store it somewhere safe,
+geographic server. You can retrieve your API key by signing into [www.cairngeographics.com](www.cairngeographics.com),
+or ask your account manager to provide it to you. Store it somewhere safe,
 as it is your password to Cairn Geographics. It will be in a format that looks like
 `CGIS-80c6d145-22ec-45da-a0fc-9f7e8666f062`.
 
