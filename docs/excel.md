@@ -2,7 +2,7 @@
 
 ## Installation
 
-Download the Excel add-in from [the downloads page](www.cairngeographics.com/downloads).
+Download the Excel add-in from [the downloads page](http://www.cairngeographics.com/my_account).
 You can install it temporarily by simply double clicking on the **CairnGeographics-AddIn.xll** file
 in your downloads; if you install it this way then it will be removed when you close Microsoft Excel.
 
@@ -15,7 +15,7 @@ If you'd like to install it permanently, then go to **File** -> **Options**, and
 ## Authentication
 
 To use Cairn Geographics, you will first need an **API key** to identify your client to the central
-geographic server. You can retrieve your API key by signing into [www.cairngeographics.com](www.cairngeographics.com),
+geographic server. You can retrieve your API key by signing into [www.cairngeographics.com](http://www.cairngeographics.com),
 or ask your account manager to provide it to you. Store it somewhere safe,
 as it is your password to Cairn Geographics. It will be in a format that looks like
 `CGIS-80c6d145-22ec-45da-a0fc-9f7e8666f062`.
