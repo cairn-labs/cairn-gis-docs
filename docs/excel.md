@@ -61,3 +61,15 @@ most recent American Community Survey (ACS). Demographics keys can either be nam
 |---------------------|-------------------------------|-------------------------------------------------------------------|--------------------------------------------------------|
 | ZipCodeDemographics | zip_code, demographics_key    | Look up demographic information for a given five-digit zip code.  | `=ZipCodeDemographics("02138", "population")`          |
 | StateDemographics   | state_code, demographics_key  | Look up demographic information for a given US state.             | `=StateDemographics("GA", "B01001A003 + B01001B003")`  |
+
+Available demographics keys currently include:
+
+| Key                     |  Description                                                                                                               |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| population              | Total 2015 population                                                                                                      |
+| pop_white               | Total population identifying as white alone ([more info](https://www.socialexplorer.com/data/ACS2015/metadata/?ds=ACS15&var=B02001002))                                                               |
+| pop_black               | Total population identifying as black alone or in combination with other races ([more info](https://www.socialexplorer.com/data/ACS2015/metadata/?ds=ACS15&var=B02001002))                            |
+| pop_asian               | Total population identifying as Asian alone or in combination with other races ([more info](https://www.socialexplorer.com/data/ACS2015/metadata/?ds=ACS15&var=B02001002))                            |
+| pop_native_american     | Total population identifying as Native American/Pacific Islander alone or in combination with other races ([more info](https://www.socialexplorer.com/data/ACS2015/metadata/?ds=ACS15&var=B02001002)) |
+| pop_hispanic            | Total population identifying as Hispanic or Latino ([more info](https://www.socialexplorer.com/data/ACS2015/metadata/?ds=ACS15&var=b03001003))                                                        |
+| median_household_income | Median household income in 2015 inflation-adjusted dollars ([more info](https://www.socialexplorer.com/data/ACS2015/metadata/?ds=ACS15&var=b19013001))                                                |

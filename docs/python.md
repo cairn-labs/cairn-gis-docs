@@ -162,6 +162,20 @@ conn.run(Region("zip_code", "90210").demographics("B05001002/B05001001"))
 Measure(value=0.6092871394884818, unit='units')
 ```
 
+
+Available demographics keys currently include:
+
+| Key                     |  Description                                                                                                               |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| population              | Total 2015 population                                                                                                      |
+| pop_white               | Total population identifying as white alone ([more info](https://www.socialexplorer.com/data/ACS2015/metadata/?ds=ACS15&var=B02001002))                                                               |
+| pop_black               | Total population identifying as black alone or in combination with other races ([more info](https://www.socialexplorer.com/data/ACS2015/metadata/?ds=ACS15&var=B02001002))                            |
+| pop_asian               | Total population identifying as Asian alone or in combination with other races ([more info](https://www.socialexplorer.com/data/ACS2015/metadata/?ds=ACS15&var=B02001002))                            |
+| pop_native_american     | Total population identifying as Native American/Pacific Islander alone or in combination with other races ([more info](https://www.socialexplorer.com/data/ACS2015/metadata/?ds=ACS15&var=B02001002)) |
+| pop_hispanic            | Total population identifying as Hispanic or Latino ([more info](https://www.socialexplorer.com/data/ACS2015/metadata/?ds=ACS15&var=b03001003))                                                        |
+| median_household_income | Median household income in 2015 inflation-adjusted dollars ([more info](https://www.socialexplorer.com/data/ACS2015/metadata/?ds=ACS15&var=b19013001))                                                |
+
+
 Note that Cairn Geographics is aware of the correct result unit for predefined queries, but cannot infer
 units for arbitrary ACS column expressions.
 
