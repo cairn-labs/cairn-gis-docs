@@ -2,7 +2,7 @@
 
 ## Installation
 
-Download the Excel add-in from [the downloads page](http://www.cairngeographics.com/my_account).
+Download the Excel add-in from [the downloads page](https://www.cairngeographics.com/my_account).
 You can install it temporarily by simply double clicking on the **CairnGeographics-AddIn.xll** file
 in your downloads; if you install it this way then it will be removed when you close Microsoft Excel.
 

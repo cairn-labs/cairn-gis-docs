@@ -12,7 +12,7 @@ pip install cairn-geographics
 ## Authentication
 
 To use Cairn Geographics, you will first need an **API key** to identify your client to the central geographic
-server. You can create one of these for free at [www.cairngeographics.com](www.cairngeographics.com).
+server. You can create one of these for free at [www.cairngeographics.com](https://www.cairngeographics.com).
 Once you have created one, store it somewhere safe, as it is your password to Cairn Geographics. It will be
 in a format that looks like`CGIS-80c6d145-22ec-45da-a0fc-9f7e8666f062`. The rest of this page assumes you have
 an API key, and refers to it as `API_KEY`.
